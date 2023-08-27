@@ -7,7 +7,6 @@ import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-// import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import axios from 'axios';
 // import { message } from 'antd';
@@ -40,18 +39,6 @@ const Login = () => {
                   localStorage.setItem("token", res.data.token);
                   localStorage.setItem("user", JSON.stringify(res.data.userData));
                   navigate('/userhome')
-                  // const isLoggedIn = JSON.parse(localStorage.getItem("user"));
-                  // switch (isLoggedIn.type) {
-                  //    case "admin":
-                  //       navigate("/adminhome");
-                  //       break;
-                  //    case "user":
-                  //       navigate("/userhome");
-                  //       break;
-                  //    default:
-                  //       navigate("/login");
-                  //       break;
-                  // }
                   setTimeout(() => {
                      window.location.reload()
                   }, 1000)
