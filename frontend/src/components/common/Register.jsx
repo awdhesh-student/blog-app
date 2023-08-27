@@ -2,15 +2,13 @@ import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
 import { Container, Nav } from 'react-bootstrap';
-import Avatar from '@mui/material/Avatar';
+
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-// import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import axios from 'axios';
-// import { message } from 'antd';
 const Register = () => {
   const navigate = useNavigate()
   const [data, setData] = useState({
@@ -32,12 +30,10 @@ const Register = () => {
         .then((response) => {
           if (response.data.success) {
             alert(response.data.message)
-            // message.success(response.data.message);
+           
             navigate('/login')
 
-          } else {
-            // message.error(response.data.message)
-          }
+          } 
         })
         .catch((error) => {
           console.log("Error", error);
@@ -80,9 +76,7 @@ const Register = () => {
             alignItems: 'center',
           }}
         >
-          <Avatar sx={{ bgcolor: 'secondary.main' }}>
-            {/* <LockOutlinedIcon /> */}
-          </Avatar>
+         
           <Typography component="h1" variant="h5">
             Sign up
           </Typography>
