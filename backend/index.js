@@ -25,7 +25,6 @@ app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 app.use('/api/user', require('./routes/userRoutes.js'))
 app.use('/api/admin', require('./routes/adminRoutes'))
-// app.use('/api/owner', require('./routes/ownerRoutes'))
 
 
 
