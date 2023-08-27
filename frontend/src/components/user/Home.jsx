@@ -31,9 +31,7 @@ const Home = () => {
    }, [])
 
    const handleLikes = async (blogId, userId, likes) => {
-      // if (!userId) {
-      //    return; 
-      // }
+      
 
       const updatedLikedStatus = { ...likedStatus };
 
