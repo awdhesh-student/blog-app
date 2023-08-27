@@ -2,14 +2,13 @@ import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
 import { Container, Nav } from 'react-bootstrap';
-import Avatar from '@mui/material/Avatar';
+
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import axios from 'axios';
-// import { message } from 'antd';
 
 const Login = () => {
    const navigate = useNavigate()
@@ -90,9 +89,7 @@ const Login = () => {
                   alignItems: 'center',
                }}
             >
-               <Avatar sx={{ bgcolor: 'secondary.main' }}>
-                  {/* <LockOutlinedIcon /> */}
-               </Avatar>
+               
                <Typography component="h1" variant="h5">
                   Sign In
                </Typography>
